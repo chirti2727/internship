@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General Settings">
+
+        <Preference
+            android:key="pref_key_notification"
+            android:title="Notifications"
+            android:summary="Enable/disable notifications" />
+
+        <Preference
+            android:key="pref_key_sound"
+            android:title="Sound"
+            android:summary="Configure sound settings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Account">
+
+        <Preference
+            android:key="pref_key_profile"
+            android:title="Edit Profile"
+            android:summary="Edit your account profile" />
+
+        <Preference
+            android:key="pref_key_logout"
+            android:title="Logout"
+            android:summary="Logout from your account" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

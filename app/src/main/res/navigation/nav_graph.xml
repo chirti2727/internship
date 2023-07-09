@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/nav_graph"
+	app:startDestination="@id/homeFragment">
+
+	<fragment
+		android:id="@+id/homeFragment"
+		android:name="com.ttl.zenith.fragment.HomeFragment"
+		android:label="fragment_home"
+		tools:layout="@layout/fragment_home" >
+		<action
+			android:id="@+id/action_homeFragment_to_myVideoFragment"
+			app:destination="@id/myVideoFragment" />
+	</fragment>
+	<fragment
+		android:id="@+id/myVideoFragment"
+		android:name="com.ttl.zenith.fragment.MyVideoFragment"
+		android:label="fragment_my_video"
+		tools:layout="@layout/fragment_my_video" >
+		<action
+			android:id="@+id/action_myVideoFragment_to_settingsFragment"
+			app:destination="@id/settingsFragment" />
+	</fragment>
+	<fragment
+		android:id="@+id/settingsFragment"
+		android:name="com.ttl.zenith.fragment.SettingsFragment"
+		android:label="fragment_settings"
+		tools:layout="@layout/fragment_settings" >
+		<action
+			android:id="@+id/action_settingsFragment_to_profileFragment"
+			app:destination="@id/profileFragment" />
+	</fragment>
+	<fragment
+		android:id="@+id/profileFragment"
+		android:name="com.ttl.zenith.fragment.ProfileFragment"
+		android:label="fragment_profile"
+		tools:layout="@layout/fragment_profile" >
+		<action
+			android:id="@+id/action_profileFragment_to_changePasswordFragment"
+			app:destination="@id/changePasswordFragment" />
+		<action
+			android:id="@+id/action_profileFragment_to_kyufragment"
+			app:destination="@id/kyufragment" />
+	</fragment>
+	<fragment
+		android:id="@+id/recommendationFragment"
+		android:name="com.ttl.zenith.fragment.RecommendationFragment"
+		android:label="fragment_recommendation"
+		tools:layout="@layout/fragment_recommendation" />
+	<fragment
+		android:id="@+id/changePasswordFragment"
+		tools:layout="@layout/fragment_chage_password"
+		android:name="com.ttl.zenith.fragment.ChangePasswordFragment"
+		android:label="ChangePasswordFragment" >
+		<action
+			android:id="@+id/action_changePasswordFragment_to_avaterFragment"
+			app:destination="@id/avaterFragment" />
+	</fragment>
+	<fragment android:id="@+id/kyufragment"
+		tools:layout="@layout/fragment_k_y_u"
+		android:name="com.ttl.zenith.fragment.KYUProffesionFragment"
+		android:label="KyuFragment">
+		<action
+			android:id="@+id/action_kyufragment_to_kyucityfragment"
+			app:destination="@id/kyucityfragment" />
+	</fragment>
+	<fragment
+		android:id="@+id/kyucityfragment"
+		tools:layout="@layout/fragment_k_y_u_city"
+		android:name="com.ttl.zenith.fragment.KYUCityFragment"
+		android:label="KyuCityFragment" >
+		<action
+			android:id="@+id/action_kyucityfragment_to_avaterFragment"
+			app:destination="@id/avaterFragment" />
+	</fragment>
+	<fragment
+		android:id="@+id/avaterFragment"
+		tools:layout="@layout/fragment_avater"
+		android:name="com.ttl.zenith.fragment.AvatarFragment"
+		android:label="AvaterFragment" />
+	<fragment
+		android:id="@+id/teacherSelectionFragment"
+		android:name="com.ttl.zenith.fragment.TeacherSelectionFragment"
+		tools:layout="@layout/fragment_teacher_selection"
+		android:label="TeacherSelectionFragment" />
+	<fragment
+		android:id="@+id/chatFragment"
+		android:name="com.ttl.zenith.fragment.ChatFragment"
+		android:label="ChatGptFragment"
+		tools:layout="@layout/fragment_chat"
+		/>
+	<fragment
+		android:id="@+id/imageProcessFragment"
+		android:name="com.ttl.zenith.fragment.ImageProcessFragment"
+		tools:layout="@layout/fragment_image_process"
+		android:label="ImageProcessFragment" />
+	<fragment
+		android:id="@+id/onlineTestFragment"
+		android:name="com.ttl.zenith.fragment.OnlineTestFragment"
+		android:label="fragment_online_test"
+		tools:layout="@layout/fragment_online_test" />
+</navigation>

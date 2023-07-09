@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:id="@+id/homeFragment"
+		android:icon="@drawable/ic_baseline_home_24"
+		android:title="@string/home_title" />
+
+	<item
+		android:id="@+id/myVideoFragment"
+		android:icon="@drawable/ic_baseline_video_library_24"
+		android:title="@string/video" />
+
+	<item
+		android:id="@+id/settingsFragment"
+		android:icon="@drawable/ic_baseline_settings_24"
+		android:title="@string/settings" />
+
+	<item
+		android:id="@+id/profileFragment"
+		android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+		android:title="@string/profile_title" />
+
+</menu>

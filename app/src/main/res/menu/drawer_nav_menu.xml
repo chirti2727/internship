@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:id="@+id/homeFragment"
+		android:icon="@drawable/ic_baseline_home_24"
+		android:title="@string/dashboard" />
+
+	<item
+		android:id="@+id/myVideoFragment"
+		android:icon="@drawable/ic_baseline_video_library_24"
+		android:title="@string/video" />
+	<item
+		android:id="@+id/videosFragment"
+		android:icon="@drawable/ic_baseline_video_library_24"
+		android:title="@string/videos" />
+	<item
+		android:id="@+id/recommendation"
+		android:icon="@drawable/ic_baseline_recommend_24"
+		android:title="@string/recommendation" />
+	<item
+		android:id="@+id/settingsFragment"
+		android:icon="@drawable/ic_baseline_settings_24"
+		android:title="@string/settings" />
+
+	<item
+		android:id="@+id/profileFragment"
+		android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+		android:title="@string/profile_title" />
+	<item
+		android:id="@+id/logout"
+		android:icon="@drawable/ic_baseline_logout_24"
+		android:title="@string/logOut" />
+</menu>

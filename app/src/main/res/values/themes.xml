@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+	<!-- Base application theme. -->
+	<style name="Theme.Zenith" parent="Theme.MaterialComponents.Light.NoActionBar">
+		<!-- Primary brand color. -->
+		<item name="colorPrimary">@color/basecolor</item>
+		<item name="colorPrimaryVariant">@color/basecolor</item>
+		<item name="colorOnPrimary">@color/white</item>
+		<!-- Secondary brand color. -->
+		<item name="colorSecondary">@color/basecolor</item>
+		<item name="colorSecondaryVariant">@color/basecolor</item>
+		<item name="colorOnSecondary">@color/black</item>
+		<!-- Status bar color. -->
+		<item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+		<!-- Customize your theme here. -->
+	</style>
+	<style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+</resources>

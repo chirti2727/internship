@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Zenith</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_title">Home</string>
+    <string name="video">My Videos</string>
+    <string name="settings">Settings</string>
+    <string name="profile_title">Profile</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="dashboard">DashBoard</string>
+    <string name="videos">Videos</string>
+    <string name="recommendation">Recommendation</string>
+    <string name="logOut">Log Out</string>
+    <string name="answer">Answer</string>
+    <string name="question">Question</string>
+
+    <string-array name="Course_array">
+        <item>---Select Courses ---</item>
+        <item>Html</item>
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Php</item>
+        <item>C#</item>
+        <item>Sql</item>
+
+    </string-array>
+    <string-array name="Level_array">
+        <item>---Select Level ---</item>
+        <item>Beginner</item>
+        <item>Moderated</item>
+        <item>Hard</item>
+
+
+    </string-array>
+</resources>

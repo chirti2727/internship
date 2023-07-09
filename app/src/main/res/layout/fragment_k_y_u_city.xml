@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.KYUCityFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/basecolor">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:padding="@dimen/_25sdp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:padding="@dimen/_2sdp"
+                   >
+                    <io.getstream.avatarview.AvatarView
+                        android:id="@+id/avatarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_3sdp"
+                        app:srcCompat="@drawable/man"
+                        app:avatarViewShape="circle"
+                        android:layout_gravity="bottom|center_horizontal"
+                        app:avatarViewInitialsBackgroundColor="@color/teal_200"
+                        app:avatarViewInitialsTextColor="@color/white"
+                        app:avatarViewInitialsTextSize="21sp"
+                        app:avatarViewInitialsTextSizeRatio="0.33"
+                        app:avatarViewInitialsTextStyle="bold"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/edit_icon" />
+
+                </FrameLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chose your avatar"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".7"
+                android:background="@drawable/layout_upper_curve"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Choose Country"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/tv_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:outlineProvider="none"
+                    android:ems="10"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- Bottom layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:paddingHorizontal="@dimen/_20sdp">
+            <LinearLayout
+                android:id="@+id/previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:padding="@dimen/_6sdp"
+                android:background="@drawable/layout_curve"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:background="@color/basecolor"
+                    android:src="@drawable/arrow_back"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/basecolor"
+                    android:layout_marginHorizontal="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:text="Back"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/skip"
+                android:padding="@dimen/_6sdp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/layout_curve"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/basecolor"
+                    android:layout_marginHorizontal="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:text="Next"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/white"/>
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:background="@color/basecolor"
+                    android:src="@drawable/arrow_forward"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/_6sdp"
+                android:background="@drawable/layout_curve"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/basecolor"
+                    android:layout_marginHorizontal="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:text="Skip"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/white"/>
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:background="@color/basecolor"
+                    android:src="@drawable/arrow_forward"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>
